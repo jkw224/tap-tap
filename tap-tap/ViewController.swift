@@ -9,17 +9,91 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    //Properties
+    var tapCounter: Int = 0
+    var totalTaps: Int = 0
+    
+    
+    //Outlets
+    @IBOutlet weak var tapTapLogo: UIImageView!
+    @IBOutlet weak var numTapsToWin: UITextField!
+    @IBOutlet weak var startBtn: UIButton!
+    
+    @IBOutlet weak var tapsLabel: UILabel!
+    @IBOutlet weak var tapBtn: UIButton!
+    
+    @IBOutlet weak var youWin: UILabel!
+    
+    
+    //Actions
+    @IBAction func onPlayBtnPressed (sender: UIButton!) {
+        
+        tapTapLogo.hidden = true
+        numTapsToWin.hidden = true
+        startBtn.hidden = true
+        
+        tapsLabel.hidden = false
+        tapBtn.hidden = false
+        
+        youWin.hidden = true
+        
+        totalTapsInitializer()
+        tapCounter = 0
+        
+        updateTapsLabel()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func onTapBtnPressed(sender: UIButton!) {
+        tapCounter++
+        updateTapsLabel()
+        
+        if displayYouWin() {
+            youWin.hidden = false
+            tapsLabel.hidden = true
+        } else if postWinClick() {
+            restartGame()
+        }
     }
-
-
+    
+    
+    // Functions
+    func totalTapsInitializer() {
+        if let tapsText = numTapsToWin.text {
+            totalTaps = Int(tapsText)!
+        }
+    }
+    
+    func updateTapsLabel() {
+        tapsLabel.text = "\(tapCounter) Taps"
+    }
+    
+    func displayYouWin() -> Bool {
+        if tapCounter == totalTaps {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func postWinClick() -> Bool {
+        if tapCounter >= totalTaps + 1 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func restartGame() {
+        tapTapLogo.hidden = false
+        numTapsToWin.hidden = false
+        startBtn.hidden = false
+        
+        tapsLabel.hidden = true
+        tapBtn.hidden = true
+        
+        youWin.hidden = true
+    }
+    
 }
 

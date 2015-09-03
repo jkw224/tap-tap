@@ -10,10 +10,10 @@
 		FB19CF141B978B4900B2F98B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB19CF131B978B4900B2F98B /* AppDelegate.swift */; };
 		FB19CF161B978B4900B2F98B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB19CF151B978B4900B2F98B /* ViewController.swift */; };
 		FB19CF191B978B4900B2F98B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB19CF171B978B4900B2F98B /* Main.storyboard */; };
-		FB19CF1B1B978B4900B2F98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB19CF1A1B978B4900B2F98B /* Assets.xcassets */; };
 		FB19CF1E1B978B4900B2F98B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB19CF1C1B978B4900B2F98B /* LaunchScreen.storyboard */; };
 		FB19CF291B978B4900B2F98B /* tap_tapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB19CF281B978B4900B2F98B /* tap_tapTests.swift */; };
 		FB19CF341B978B4900B2F98B /* tap_tapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB19CF331B978B4900B2F98B /* tap_tapUITests.swift */; };
+		FB19CF421B97B12500B2F98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB19CF411B97B12500B2F98B /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		FB19CF131B978B4900B2F98B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB19CF151B978B4900B2F98B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB19CF181B978B4900B2F98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB19CF1A1B978B4900B2F98B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB19CF1D1B978B4900B2F98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB19CF1F1B978B4900B2F98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB19CF241B978B4900B2F98B /* tap-tapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tap-tapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		FB19CF2F1B978B4900B2F98B /* tap-tapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tap-tapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB19CF331B978B4900B2F98B /* tap_tapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tap_tapUITests.swift; sourceTree = "<group>"; };
 		FB19CF351B978B4900B2F98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB19CF411B97B12500B2F98B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 				FB19CF131B978B4900B2F98B /* AppDelegate.swift */,
 				FB19CF151B978B4900B2F98B /* ViewController.swift */,
 				FB19CF171B978B4900B2F98B /* Main.storyboard */,
-				FB19CF1A1B978B4900B2F98B /* Assets.xcassets */,
+				FB19CF411B97B12500B2F98B /* Assets.xcassets */,
 				FB19CF1C1B978B4900B2F98B /* LaunchScreen.storyboard */,
 				FB19CF1F1B978B4900B2F98B /* Info.plist */,
 			);
@@ -229,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB19CF1E1B978B4900B2F98B /* LaunchScreen.storyboard in Resources */,
-				FB19CF1B1B978B4900B2F98B /* Assets.xcassets in Resources */,
+				FB19CF421B97B12500B2F98B /* Assets.xcassets in Resources */,
 				FB19CF191B978B4900B2F98B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +481,7 @@
 				FB19CF3A1B978B4900B2F98B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB19CF3B1B978B4900B2F98B /* Build configuration list for PBXNativeTarget "tap-tapTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +490,7 @@
 				FB19CF3D1B978B4900B2F98B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB19CF3E1B978B4900B2F98B /* Build configuration list for PBXNativeTarget "tap-tapUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +499,7 @@
 				FB19CF401B978B4900B2F98B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
